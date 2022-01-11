@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@500;600;700&display=swap");
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #121212;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bannar {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.bannar-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  color: white;
+}
+.bannar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.bannar-title {
+  font-size: 60px;
+  white-space: nowrap;
+  position: relative;
+  color: transparent;
+}
+.bannar-text {
+  line-height: 2;
+  margin: 20px 0;
+}
+.bannar-title::before {
+  content: "Programming hero";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #22bedd;
+  animation: typing 3s linear infinite;
+}
+@keyframes typing {
+  0% {
+    content: "P|";
+  }
+
+  4% {
+    content: "Pr|";
+  }
+
+  8% {
+    content: "Pro|";
+  }
+
+  12% {
+    content: "Prog|";
+  }
+
+  16% {
+    content: "Progr|";
+  }
+
+  20% {
+    content: "Progra|";
+  }
+
+  24% {
+    content: "Program|";
+  }
+
+  28% {
+    content: "Programm|";
+  }
+
+  32% {
+    content: "Programmi|";
+  }
+
+  36% {
+    content: "Programmin|";
+  }
+
+  40% {
+    content: "Programming|";
+  }
+
+  44% {
+    content: "Programming |";
+  }
+
+  48% {
+    content: "Programming h|";
+  }
+
+  52% {
+    content: "Programming he|";
+  }
+
+  56% {
+    content: "Programming her|";
+  }
+
+  60% {
+    content: "Programming hero|";
+  }
+
+  64%,
+  83% {
+    content: "Programming hero|";
+  }
+
+  84% {
+    content: "Programming her|";
+  }
+
+  85% {
+    content: "Programming he|";
+  }
+
+  86% {
+    content: "Programming h|";
+  }
+
+  87% {
+    content: "Programming |";
+  }
+
+  88% {
+    content: "Programming|";
+  }
+
+  89% {
+    content: "Programmin|";
+  }
+
+  90% {
+    content: "Programmi|";
+  }
+
+  91% {
+    content: "Programm|";
+  }
+
+  92% {
+    content: "Program|";
+  }
+
+  93% {
+    content: "Progra|";
+  }
+
+  94% {
+    content: "Progr|";
+  }
+
+  95% {
+    content: "Prog|";
+  }
+
+  96% {
+    content: "Pro|";
+  }
+
+  97% {
+    content: "Pr|";
+  }
+
+  98% {
+    content: "P|";
+  }
+
+  99% {
+    content: "|";
+  }
+
+  100% {
+    content: "|";
+  }
+}
+button.love-button {
+  padding: 10px 30px;
+  border: none;
+  border: 4px solid #22bedd;
+  background-color: #22bedd;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 10px;
+  transition: 0.3s linear;
+}
+
+button.love-button:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+.bannar-right img {
+  border: 4px solid #22bedd;
+}
