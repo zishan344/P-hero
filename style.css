@@ -17,6 +17,8 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 .bannar-left {
   display: flex;
@@ -205,6 +207,26 @@ button.love-button:hover {
 .bannar-right img {
   border: 4px solid #22bedd;
 }
+.section-title {
+  text-align: center;
+}
+.section-title h1 {
+  color: white;
+  margin: 50px 0px;
+  font-size: 3em;
+  border-left: 5px solid #22bedd;
+  border-right: 5px solid #22bedd;
+  display: inline-block;
+  line-height: 0.8;
+}
+.gallary {
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 .photo {
   height: 280px;
   width: 280px;
@@ -219,7 +241,7 @@ button.love-button:hover {
 .border {
   background: white;
   position: absolute;
-  transition: 0.7s ease-in 0.2s;
+  transition: 0.4s ease-in 0.2s;
 }
 .border.top {
   width: 270px;
@@ -259,4 +281,31 @@ button.love-button:hover {
 }
 .photo:hover .border.left {
   top: 5px;
+}
+.photo-contant {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  padding-left: 30px;
+  color: white;
+  opacity: 0;
+  transition: 0.4s linear;
+}
+.photo:hover .photo-contant {
+  opacity: 1;
+}
+.photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+
+  opacity: 0;
+  transition: 0.3s;
+}
+.photo:hover::before {
+  opacity: 1;
 }
