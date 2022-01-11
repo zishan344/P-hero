@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@500;600;700&display=swap");
 * {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -204,4 +204,59 @@ button.love-button:hover {
 }
 .bannar-right img {
   border: 4px solid #22bedd;
+}
+.photo {
+  height: 280px;
+  width: 280px;
+  position: relative;
+  overflow: hidden;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.border {
+  background: white;
+  position: absolute;
+  transition: 0.7s ease-in 0.2s;
+}
+.border.top {
+  width: 270px;
+  height: 4px;
+  left: 100%;
+  top: 6px;
+}
+
+.border.right {
+  width: 4px;
+  height: 270px;
+  bottom: 100%;
+  left: 5px;
+}
+
+.border.bottom {
+  width: 270px;
+  height: 4px;
+  right: 100%;
+  bottom: 5px;
+}
+
+.border.left {
+  width: 4px;
+  height: 270px;
+  right: 5px;
+  top: 100%;
+}
+.photo:hover .border.top {
+  left: 5px;
+}
+.photo:hover .border.right {
+  bottom: 5px;
+}
+.photo:hover .border.bottom {
+  right: 5px;
+}
+.photo:hover .border.left {
+  top: 5px;
 }
